@@ -3,14 +3,14 @@
 SQL_Connection::SQL_Connection()
 {
 	struct connection_details mysqlD;
-	mysqlD.server = "localhost";
-	mysqlD.user = "albus";
-	mysqlD.password = "123qwe";
-	mysqlD.database = "company_staff";
+	mysqlD.server = "localhost"; // change this
+	mysqlD.user = "username"; // change this
+	mysqlD.password = "123qwe"; // change this
+	mysqlD.database = "company_staff"; // change this if you have another name
 	// connect to the mysql database
 	connection = mysql_connection_setup(mysqlD);
 	// get the results from executing commands
-	res = mysql_perform_query(connection, "select * from employees where database_id=999");
+	res = mysql_perform_query(connection, "select * from employees where database_id=999"); // change this if you have another table name
 	row = mysql_fetch_row(res);
 }
 
