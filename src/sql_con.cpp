@@ -5,7 +5,7 @@ SQL_Connection::SQL_Connection()
 	struct connection_details mysqlD;
 	mysqlD.server = "localhost"; // change this
 	mysqlD.user = "username"; // change this
-	mysqlD.password = "123qwe"; // change this
+	mysqlD.password = "password"; // change this
 	mysqlD.database = "company_staff"; // change this if you have another name
 	// connect to the mysql database
 	connection = mysql_connection_setup(mysqlD);
