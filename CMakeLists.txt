@@ -11,7 +11,6 @@ pkg_check_modules(GTKMM gtkmm-4.0)
 link_directories( ${GTKMM_LIBRARY_DIRS} )
 include_directories( ${GTKMM_INCLUDE_DIRS} )
 
-set(OpenCV_DIR /home/albus/Programming/learning_cv/opencv/face_recognition/opencv/lib/cmake/opencv4)
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
